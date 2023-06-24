@@ -1,12 +1,12 @@
 ## 1. Organización general:
 
-- Página de inicio:
+### Página de inicio:
 
     - Formulario de registro y acceso para usuarios.
     - Mostrar el leaderboard con las mejores puntuaciones.
     - Posibles retos diarios.
 
-- Modo Infinito :
+### Modo Infinito :
 
     - Sistema infinito y continuo generador de textos.
     - Generación aleatoria o utilizando una IA.
@@ -15,20 +15,20 @@
     - Sistema de puntuación en base a los parámetros anteriores.
     - Permitir al usuario pausar o reiniciar el modo infinito en cualquier momento.
 
-- Niveles de dificultad:
+### Niveles de dificultad:
 
     - Establecer una progresión gradual de dificultad que vaya añadiendo números, símbolos, cambios de idioma...
     - Niveles por tiempo, por longitud de los textos, grado de dificultad...
     - Desbloqueo de niveles o disponibilidad total a todos los usuarios.
     - Registro del progreso por nivel y comparativa con el resto de usuarios.
 
-- Modo Competitivo:
+### Modo Competitivo:
 
     - Competiciones cronometradas o basadas en desafíos específicos.
     - Registrar las puntuaciones de los usuarios en las competiciones y mostrarlas en un leaderboard exclusivo para el competitivo.
     - Establecer rangos o niveles de clasificación basados en las puntuaciones de los usuarios.
 
-- 2. Objetivos específicos:
+## 2. Objetivos específicos:
 
     - Sistema de autenticación y registro de usuarios.
     - Crear una base de datos para almacenar información de usuarios, puntuaciones y progreso en los niveles.
