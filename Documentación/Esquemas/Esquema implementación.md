@@ -1,5 +1,4 @@
 # 1. Diseño de la interfaz de usuario
-
 - Boceto a papel, pasado a Figma online.
 ## Diseño
 - Consola de caracteres
