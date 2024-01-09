@@ -8,6 +8,6 @@
 - Página editable por el usuario para su visualización única (por usuario). #Propuestas 
 - Estética pixel art. #Propuestas 
 # 2. Configuración del entorno de desarrollo
-
-
-
+Configuración del servidor local
+- VSC
+- Node.js -> Express.js
