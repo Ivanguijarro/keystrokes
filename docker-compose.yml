@@ -13,19 +13,32 @@ services:
     volumes:
       - db-data:/var/lib/postgresql/data
 
+  redis:
+    image: redis:7-alpine
+    restart: always
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+
   app:
     build: .
     depends_on:
       - db
+      - redis
     environment:
       DATABASE_URL: postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB}
+      REDIS_URL: redis://redis:6379
       NEXTAUTH_URL: http://localhost:3000
       NEXTAUTH_SECRET: ${NEXTAUTH_SECRET}
+      MARKOV_N: ${MARKOV_N:-3}
+      CORPUS_DIR: /usr/src/app/corpus
     volumes:
       - .:/usr/src/app
-      - /usr/src/app/node_modules
+      - ./corpus:/usr/src/app/corpus
     ports:
       - "3000:3000"
 
 volumes:
   db-data:
+  redis-data:
